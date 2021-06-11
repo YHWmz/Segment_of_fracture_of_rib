@@ -104,7 +104,7 @@ def predict(model_path, data_path = '/GPFS/data/yuhaowang/Ribfrac_tmp/ribfrac-va
 
 def main():
     #模型参数路径
-    model_path = './model_weights_ours1.pth'    
+    model_path = './model_weights.pth'    
     #预测结果的存储路径
     store_path = '/GPFS/data/yuhaowang/3dunet/pred_test'
     #需要预测的图像的路径
