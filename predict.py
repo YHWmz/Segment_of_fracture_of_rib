@@ -103,8 +103,11 @@ def predict(model_path, data_path = '/GPFS/data/yuhaowang/Ribfrac_tmp/ribfrac-va
     pred_info.to_csv(os.path.join(store_path, "ribfrac-val-pred.csv"),index=False)
 
 def main():
-    model_path = './model_weights_ours1.pth'
+    #模型参数路径
+    model_path = './model_weights_ours1.pth'    
+    #预测结果的存储路径
     store_path = '/GPFS/data/yuhaowang/3dunet/pred_test'
+    #需要预测的图像的路径
     data_path = '/GPFS/data/yuhaowang/Ribfrac_tmp/ribfrac-test-images/'
     crop_size = (64,64,64)
     predict(model_path, data_path , crop_size , store_path)
