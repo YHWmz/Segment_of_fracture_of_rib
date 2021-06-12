@@ -25,7 +25,7 @@ from skimage.morphology import disk, remove_small_objects
 import os
 seterr(all='raise')
 
-#将三维的原图与原label输入，以dataloader的形式输出只剩下ROI并且归一化和分patch的img和label
+#将三维的原图与原label输入，以dataloader的形式输出
 class preprocesser():
     def __init__(self, num = 4, crop_size = (64,64,64)):
         super(preprocesser,self).__init__()
