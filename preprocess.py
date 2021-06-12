@@ -61,7 +61,7 @@ class val_preprocesser():
         return img,threshold
 
 #预处理1：骨头部分（ROI）的提取
-#将让图片只剩下肋骨与脊柱以及附近组织，因为我们只感兴趣骨头部位
+#让图片只剩下肋骨与脊柱以及附近组织
 def BoneExtract(imgs):
     imgs[:,:,400:-1]=-1024
     img_mask = bone_mask(imgs, mode = 5)
