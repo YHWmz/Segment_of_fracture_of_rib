@@ -15,3 +15,4 @@ training.py：用于模型训练，运行完后会生成model_weights.pth文件�
 
 predict.py：用训练好的模型进行预测，输出csv以及nill文件。只需要修改第122、124与126行的路径即可运行。
 
+测试集预测结果：对test集的预测结果，即预测label的nii文件以及csv文件
