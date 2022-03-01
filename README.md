@@ -1,7 +1,4 @@
 # 医学3D图像检测分割
-SJTU AI2612 Final HomeWork
-
-小组成员：王宇昊 陈星元
 
 Unet.py：模型文件
 
